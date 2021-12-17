@@ -5,3 +5,4 @@ function addTwoNumbers() {
   
     console.log(sum)
   }
+addTwoNumbers()
