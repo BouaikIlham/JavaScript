@@ -1,3 +1,4 @@
+
 function fullName() {
   let name = 'ilham'
   console.log(name)
@@ -27,4 +28,5 @@ console.log(perimeterOfRectangle(2,2))
       return  (Celcius * 9/5) + 32
     }
     console.log(convertCelciusToFahrenheit(2))
+
 
