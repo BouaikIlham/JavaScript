@@ -112,7 +112,33 @@ const  personAccount = {
     },
 }
         
-
-
 console.log(personAccount.totalIncome())
 console.log(personAccount.totalExpenses())
+///////////////////////////////////////////////////
+const student = {
+    firstName: "ilham",
+    lastName: "bouaik",
+    age: 19,
+    gardes: {
+        physique: 18,
+        math: 12,
+        philo: 4,
+        french: 16,
+        arabic: 20
+    },
+    fullName: function() {
+        return `I am ${this.firstName} ${this.lastName}`
+    },
+
+    avergeGrades: function() {
+        let numOfSub = Object.keys(this.gardes).length
+        let sum = 0
+        for (garde in this.gardes) {
+            sum = sum + this.gardes[garde]
+        }
+        let average = sum / numOfSub
+        return average 
+    },
+}
+console.log(student.fullName())
+console.log(student.avergeGrades())
