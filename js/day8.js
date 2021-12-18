@@ -81,4 +81,38 @@ for  (const user in users) {
     }
 }
 console.log(mernUsers)
+////////////////////////////////////////////////////////////level 2
 
+const  personAccount = {
+    firstName: "Thomas",
+    lastName: "Hand",
+    incomes: {
+        job: 100,
+        busnes: 80,
+        work: 95
+    },
+    expenses: {
+        holiday: 20,
+        home: 30,
+        car: 60
+     },
+    totalIncome: function() {
+        let sum = 0
+        for (income in this.incomes) {
+            sum = sum + this.incomes[income]
+        }
+        return sum
+    },
+    totalExpenses: function() {
+        let sum = 0
+        for (expense in this.expenses) {
+            sum = sum + this.expenses[expense]
+        }
+        return sum
+    },
+}
+        
+
+
+console.log(personAccount.totalIncome())
+console.log(personAccount.totalExpenses())
