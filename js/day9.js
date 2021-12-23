@@ -55,3 +55,11 @@ root.addEventListener('click', (e) => {
         e.target.classList.add('test')
     }
 })
+
+
+
+
+
+
+
+console.log(hello("lhoussaine"))
